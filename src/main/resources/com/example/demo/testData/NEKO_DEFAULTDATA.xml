@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+<neko_table ID="1" name="ねこ" age="10"/>
+<neko_table ID="2" name="みけ" age="3"/>
+<neko_table ID="3" name="たま" age="5"/>
+<neko_table ID="4" name="くろ" age="2"/>
+<neko_table ID="5" name="しろ" age="4"/>
+</dataset>
