@@ -87,6 +87,13 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Junit Libraries 追加開始 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 
 
 	</dependencies>
