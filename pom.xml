@@ -18,6 +18,8 @@
 		<java.version>1.8</java.version>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<jacoco-maven.version>0.7.9</jacoco-maven.version>
+		<jacoco.include.package>**/*</jacoco.include.package>
 	</properties>
 	<dependencies>
 
@@ -105,6 +107,19 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M7</version>
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>${jacoco-maven.version}</version>
+				<executions>
+					<execution>
+						<id>default-prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
